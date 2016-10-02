@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Name of dish"
+            android:hint="Name of dish"
             android:ems="10"
             android:id="@+id/editText"
             android:layout_alignParentTop="true"
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Nationality"
+            android:hint="Nationality"
             android:ems="10"
             android:layout_below="@+id/editText"
             android:layout_alignRight="@+id/editText"
@@ -43,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Ingredients"
+            android:hint="Ingredients"
             android:ems="10"
             android:id="@+id/editText3"
             android:layout_below="@+id/editText2"
@@ -56,7 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Description"
+            android:hint="Description"
             android:ems="10"
             android:layout_below="@+id/editText3"
             android:layout_alignRight="@+id/editText3"
@@ -69,7 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Price"
+            android:hint="Price"
             android:ems="10"
             android:id="@+id/editText5"
             android:layout_below="@+id/editText4"
@@ -82,28 +82,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Date"
+            android:hint="Date"
             android:ems="10"
-            android:layout_below="@+id/editText5"
-            android:layout_alignRight="@+id/editText5"
-            android:layout_alignEnd="@+id/editText5"
-            android:layout_marginTop="46dp"
-            android:id="@+id/editText6"
+            android:id="@+id/editText10"
+            android:layout_marginBottom="35dp"
             android:fontFamily="casual"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/editText6"
+            android:layout_alignStart="@+id/editText6" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Time"
+            android:hint="Time"
             android:ems="10"
-            android:id="@+id/editText7"
-            android:layout_below="@+id/editText6"
-            android:layout_alignLeft="@+id/editText6"
-            android:layout_alignStart="@+id/editText6"
+            android:id="@+id/editText6"
             android:fontFamily="casual"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:layout_alignBottom="@+id/editText10"
+            android:layout_alignLeft="@+id/editText5"
+            android:layout_alignStart="@+id/editText5"
+            android:layout_marginBottom="43dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/camera_button"
+            android:background="@drawable/camera"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="86dp"
+            android:layout_marginEnd="86dp" />
 
     </RelativeLayout>
-</LinearLayout>
+</RelativeLayout>

@@ -1,6 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_makeameal">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name of dish"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="114dp"
+            android:textSize="14sp"
+            android:textColorLink="@color/colorAccent"
+            android:fontFamily="casual" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Nationality"
+            android:ems="10"
+            android:layout_below="@+id/editText"
+            android:layout_alignRight="@+id/editText"
+            android:layout_alignEnd="@+id/editText"
+            android:id="@+id/editText2"
+            android:fontFamily="casual"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Ingredients"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:layout_below="@+id/editText2"
+            android:layout_alignRight="@+id/editText2"
+            android:layout_alignEnd="@+id/editText2"
+            android:fontFamily="casual"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Description"
+            android:ems="10"
+            android:layout_below="@+id/editText3"
+            android:layout_alignRight="@+id/editText3"
+            android:layout_alignEnd="@+id/editText3"
+            android:id="@+id/editText4"
+            android:textSize="14sp"
+            android:fontFamily="casual" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Price"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:layout_below="@+id/editText4"
+            android:layout_alignRight="@+id/editText4"
+            android:layout_alignEnd="@+id/editText4"
+            android:fontFamily="casual"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Date"
+            android:ems="10"
+            android:layout_below="@+id/editText5"
+            android:layout_alignRight="@+id/editText5"
+            android:layout_alignEnd="@+id/editText5"
+            android:layout_marginTop="46dp"
+            android:id="@+id/editText6"
+            android:fontFamily="casual"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Time"
+            android:ems="10"
+            android:id="@+id/editText7"
+            android:layout_below="@+id/editText6"
+            android:layout_alignLeft="@+id/editText6"
+            android:layout_alignStart="@+id/editText6"
+            android:fontFamily="casual"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
 </LinearLayout>

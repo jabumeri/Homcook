@@ -3,4 +3,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="34dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="42dp"
+            android:id="@+id/TBName" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Phone #"
+            android:ems="10"
+            android:layout_below="@+id/TBName"
+            android:layout_alignRight="@+id/TBName"
+            android:layout_alignEnd="@+id/TBName"
+            android:layout_marginTop="30dp"
+            android:id="@+id/TBPhone" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Address"
+            android:ems="10"
+            android:layout_below="@+id/TBPhone"
+            android:layout_alignRight="@+id/TBPhone"
+            android:layout_alignEnd="@+id/TBPhone"
+            android:layout_marginTop="18dp"
+            android:id="@+id/TBAddress" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:layout_below="@+id/TBAddress"
+            android:layout_alignRight="@+id/TBAddress"
+            android:layout_alignEnd="@+id/TBAddress"
+            android:layout_marginTop="32dp"
+            android:id="@+id/TBEmail"
+            android:text="email " />
+
+        <Button
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TBEmail"
+            android:layout_alignRight="@+id/TBEmail"
+            android:layout_alignEnd="@+id/TBEmail"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="72dp"
+            android:id="@+id/submitButton" />
+
+    </RelativeLayout>
 </LinearLayout>
